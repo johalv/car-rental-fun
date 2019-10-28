@@ -26,7 +26,6 @@ div {
 
 main {
   margin: 0 auto;
-  /* max-width: 920px; */
   padding: 0;
 }
 
@@ -40,8 +39,14 @@ h2 {
 }
 
 h3 a {
-  color: #1d2226;
+  color: #ffffff;
+  text-shadow: 1px 1px 8px #000;
   text-decoration: none;
+}
+
+.navContainer h3 a {
+  color: #ae3422;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.151);
 }
 
 h4 {
@@ -107,13 +112,10 @@ nav {
 
 /* ______ ______ */
 
+
 .subtitle {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #1d2226;
-}
-
-.disclaimer {
-  font-size: 0.5rem;
 }
 
 /* ––––– BUTTONS ––––– */
@@ -128,8 +130,6 @@ button {
   font: inherit;
   color: inherit;
   background-color: transparent;
-  /* show a hand cursor on hover; some argue that we
-  should keep the default arrow cursor for buttons */
   cursor: pointer;
 }
 
@@ -152,7 +152,7 @@ button {
   text-align: center;
   background-color: transparent;
   border: 2px solid #ae3422;
-  color: #ae3422;
+  color: #000000;
   font-size: 1.1rem;
   border-radius: 12px;
   min-width: 200px;
@@ -166,13 +166,13 @@ button {
 .primaryBtn:hover {
   background-color: transparent;
   border: 2px solid #ae3422;
-  color: #ae3422;
+  color: #000000;
   box-shadow: 1px 4px 8px 3px #00000048;
 }
 
 .secondaryBtn:hover {
-  background-color: #ae352275;
-  border: 2px solid #ae3422;
+  background-color: rgba(37, 22, 22, 0.863);
+  border: 2px solid rgba(37, 22, 22, 0.863);
   color: #f6f5f5;
   box-shadow: 1px 4px 8px 3px #00000048;
 }
@@ -331,14 +331,14 @@ tr:nth-child(even) {
 
 /* ––––– SVG ––––– */
 
-.hero-transition-svg-container {
+.svg-div {
   position: relative;
   width: 100%;
   bottom: -3px;
   line-height: 0;
 }
 
-.hero-transition-svg-container svg {
+.svg-div svg {
   width: 100vw;
   max-height: 12vh;
   bottom: 0;
@@ -354,7 +354,6 @@ tr:nth-child(even) {
 
 .nextdiv {
   background-color: #5cd1b4;
-  padding: ;
 }
 
 svg:not(:root) {
